@@ -6,16 +6,19 @@ const pizzaMenu = [
     id: 1,
     name: "Pepperoni",
     description: "A classic pizza with pepperoni and cheese",
+    image: "/public/pizzas/pepperoni.webp",
   },
   {
     id: 2,
     name: "Margherita",
     description: "A classic pizza with tomato sauce, mozzarella, and basil",
+    image: "/public/pizzas/big_meat.webp",
   },
   {
     id: 3,
     name: "Hawaiian",
     description: "A classic pizza with ham, pineapple, and cheese",
+    image: "/public/pizzas/hawaiian.webp",
   },
 ];
 

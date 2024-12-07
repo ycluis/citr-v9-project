@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import Pizza from "./Pizza";
 
 const pizzaMenu = [
   {
@@ -18,13 +19,6 @@ const pizzaMenu = [
     description: "A classic pizza with ham, pineapple, and cheese",
   },
 ];
-
-const Pizza = ({ name, description }) => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", { key: "title" }, name),
-    React.createElement("p", { key: "description" }, description),
-  ]);
-};
 
 const App = () => {
   return React.createElement("div", {}, [

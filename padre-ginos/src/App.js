@@ -1,3 +1,6 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+
 const pizzaMenu = [
   {
     id: 1,
@@ -28,14 +31,14 @@ const App = () => {
     React.createElement(
       "h1",
       { key: "header", className: "text-3xl font-bold underline" },
-      "Padre Gino's"
+      "Padre Gino's",
     ),
     pizzaMenu.map((pizza) =>
-      React.createElement(Pizza, { key: pizza.id, ...pizza })
+      React.createElement(Pizza, { key: pizza.id, ...pizza }),
     ),
   ]);
 };
 
 const container = document.getElementById("root");
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 root.render(React.createElement(App));
